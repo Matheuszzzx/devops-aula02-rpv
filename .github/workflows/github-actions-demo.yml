@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Deploy-Portifolioatv:
     runs-on: ubuntu-latest
     steps:
       - name: Primeiro Step do Fluxo
@@ -11,3 +11,6 @@ jobs:
         run: echo "A ação está sendo gerada no Sistema Operacional ${{ runner.os }}."
       - name: Ultimo Step do Fluxo
         run: echo "Criado em(14/09/2026)"
+      - name: Descobrir Memoria RAM
+        run: lsb-release -a && free -h
+        
